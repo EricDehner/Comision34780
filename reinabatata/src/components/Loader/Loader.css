@@ -1,0 +1,18 @@
+.loader{
+    width: 150px;
+    height: 150px;
+    border: solid rgb(0, 0, 0) 10px;
+    border-bottom: solid transparent 10px;
+    border-radius: 50%;
+    animation: loader 1.5s linear infinite;
+    margin: auto;
+    margin-top: 17rem;
+}
+@keyframes loader{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

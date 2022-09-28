@@ -1,0 +1,32 @@
+.navbar_color {
+    background-color: rgba(197, 200, 172, 0.97);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.178);
+}
+
+
+.navbar_color-dropdown {
+    background-color: rgba(197, 200, 172, 0.808);
+    border: 1px #c5c8ac;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-icon {
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+}
+
+.space_item {
+    font-size: 20px;
+    font-family: "Bebas Neue", cursive;
+    padding: 0rem .7rem;
+}
+
+.nav-link{
+    border: 0;
+background-color: transparent;
+}
