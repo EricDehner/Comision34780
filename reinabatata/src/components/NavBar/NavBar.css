@@ -20,13 +20,22 @@
     font-size: 2rem;
 }
 
+.navbar_decoration{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.645);
+}
+.navbar_decoration:hover {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
 .space_item {
     font-size: 20px;
     font-family: "Bebas Neue", cursive;
     padding: 0rem .7rem;
 }
 
-.nav-link{
+.nav-link {
     border: 0;
-background-color: transparent;
+    background-color: transparent;
 }

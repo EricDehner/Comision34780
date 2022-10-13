@@ -1,4 +1,4 @@
-.loader{
+.ItemLoader{
     width: 150px;
     height: 150px;
     border: solid rgb(0, 0, 0) 10px;
@@ -8,7 +8,7 @@
     margin: auto;
     margin-top: 17rem;
 }
-@keyframes loader{
+@keyframes ItemLoader{
     0%{
         transform: rotate(0deg);
     }

@@ -1,9 +1,12 @@
 .base_web {
-    background-image: url(/imagenes/fondo/fondo.png);
+
     background-size: auto;
     font-size: 19px;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: max-content auto max-content;
+}
+.fondo{
+    background-image: url(../public/images/fondo/fondo.png);
 }

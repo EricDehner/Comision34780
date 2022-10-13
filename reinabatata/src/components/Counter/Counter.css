@@ -1,0 +1,32 @@
+.counterBtn{
+    margin: auto;
+    padding-top: 2px;
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:  flex-start;
+    border: 2px solid rgba(90, 90, 90, 0.294);
+    border-radius: 8px;
+    background-color: rgba(197, 200, 172, 0.52);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.324);
+}
+
+.counter-subtract, .counter-add{
+    border: 0;
+    padding: 0 1rem;
+    background-color: transparent;
+    color: rgba(59, 59, 59, 0.832);
+    font-family: "Bebas Neue", cursive;
+    font-size: 2rem;
+
+}
+
+.counter-numb{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 0;
+    color: rgba(59, 59, 59, 0.916);
+}
+
