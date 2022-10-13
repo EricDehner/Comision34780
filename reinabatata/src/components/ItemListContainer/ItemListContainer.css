@@ -1,9 +1,15 @@
-.tittleItemList{
+.tittleItemList {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Dancing Script", cursive;
-margin-top: 3rem;
+    margin-top: 3rem;
 }
 
-
+.uiball_loader{
+    height: 93vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

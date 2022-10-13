@@ -7,6 +7,15 @@
     grid-template-columns: 1fr;
     grid-template-rows: max-content auto max-content;
 }
-.fondo{
+
+.fondo {
     background-image: url(../public/images/fondo/fondo.png);
+}
+
+.error {
+    width: 100%;
+    height: 92.7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

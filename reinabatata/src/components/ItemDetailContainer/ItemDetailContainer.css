@@ -1,6 +1,7 @@
-.item_detail-container{
+.item_detail-container {
     height: 83vh;
 }
+
 .detail_container {
     width: 1500px;
     margin: auto;
@@ -23,7 +24,7 @@
     justify-content: space-around;
 }
 
-.detail_img{
+.detail_img {
     background-color: rgba(0, 0, 0, 0.419);
     width: 600px;
     height: 600px;
@@ -31,20 +32,20 @@
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.34);
 }
 
-.detail_content{
+.detail_content {
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 }
 
-.detail_content-name{
+.detail_content-name {
     margin-bottom: 8rem;
     font-family: "Dancing Script", cursive;
     font-size: 3rem;
 }
 
-.detail_content-description{
+.detail_content-description {
     font-size: 1.8rem;
     color: rgba(0, 0, 0, 0.773);
 }
@@ -55,6 +56,7 @@
     font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.637);
 }
-.detail_content-counter{
+
+.detail_content-counter {
     margin-bottom: 3rem;
 }

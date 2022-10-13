@@ -1,8 +1,10 @@
 import "./ItemLoader.css"
 
 const ItemLoader = () => {
-    return(
-        <div className="ItemLoader">
+    return (
+        <div className="loader_container">
+            <div className="ItemLoader">
+            </div>
         </div>
     )
 }

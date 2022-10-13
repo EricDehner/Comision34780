@@ -10,7 +10,7 @@ const Item = ({ id, img, name, description, price }) => {
                 <h2 className="item_description">{description} </h2>
                 <div className="itemm">
                     <Link to={`/detail/${id}`}>
-                    <button className="item_buttom">Ver detalle</button>
+                        <button className="item_buttom">Ver detalle</button>
                     </Link>
                     <h3 className="item_price">${price} </h3>
                 </div>

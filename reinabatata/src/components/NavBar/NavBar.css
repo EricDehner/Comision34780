@@ -20,17 +20,18 @@
     font-size: 2rem;
 }
 
-.navbar_decoration{
+.navbar_decoration {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.645);
 }
+
 .navbar_decoration:hover {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.8);
 }
 
 .space_item {
-    font-size: 20px;
+    font-size: 1.2rem;
     font-family: "Bebas Neue", cursive;
     padding: 0rem .7rem;
 }
@@ -38,4 +39,9 @@
 .nav-link {
     border: 0;
     background-color: transparent;
+
+}
+
+.nav-decoration {
+    text-decoration: none;
 }
