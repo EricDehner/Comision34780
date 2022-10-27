@@ -28,7 +28,7 @@ const NavBar = () => {
                         <li className="nav-item space_item">
                             <button id="btnCarrito" className="nav-link btn-carrito" data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop">
-                                <CartWidget quantity={0} />
+                                <CartWidget/>
                             </button>
                         </li>
                     </ul>

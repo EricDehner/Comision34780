@@ -4,7 +4,7 @@ const products = [
         description: "Combo de almohadones",
         name: "Combo Cleo",
         price: 3500,
-        img: "/images/productos/almohadones/01.png",
+        img: "https://i.imgur.com/NooRAH8.png",
         stock: 11,
         category: "almohadon"
     },
@@ -13,7 +13,7 @@ const products = [
         description: "Combo de almohadones",
         name: "Combo Suri",
         price: 3500,
-        img: "/images/productos/almohadones/02.png",
+        img: "https://i.imgur.com/N8VCMcn.png",
         stock: 7,
         category: "almohadon"
     },
@@ -22,7 +22,7 @@ const products = [
         description: "Combo de almohadones",
         name: "Combo JoJo",
         price: 3500,
-        img: "/images/productos/almohadones/03.png",
+        img: "https://i.imgur.com/2xVHSMN.png",
         stock: 6,
         category: "almohadon"
     },
@@ -31,7 +31,7 @@ const products = [
         description: "Combo de almohadones",
         name: "Combo Kohl’s",
         price: 3500,
-        img: "/images/productos/almohadones/04.png",
+        img: "https://i.imgur.com/fVahXWy.png",
         stock: 9,
         category: "almohadon"
     },
@@ -40,7 +40,7 @@ const products = [
         description: "Combo de almohadones",
         name: "Combo Daisy",
         price: 3500,
-        img: "/images/productos/almohadones/05.png",
+        img: "https://i.imgur.com/ZN5vUxE.png",
         stock: 3,
         category: "almohadon"
     },
@@ -49,7 +49,7 @@ const products = [
         description: "Combo de almohadones",
         name: "Combo Libél",
         price: 3500,
-        img: "/images/productos/almohadones/06.png",
+        img: "https://i.imgur.com/pXbBepj.png",
         stock: 7,
         category: "almohadon"
     },
@@ -58,7 +58,7 @@ const products = [
         description: "Combo de almohadones",
         name: "Combo Benit",
         price: 3500,
-        img: "/images/productos/almohadones/07.png",
+        img: "https://i.imgur.com/42ixrLG.png",
         stock: 5,
         category: "almohadon"
     },
@@ -67,7 +67,7 @@ const products = [
         description: "Combo de almohadones",
         name: "Combo Igls",
         price: 5500,
-        img: "/images/productos/almohadones/08.png",
+        img: "https://i.imgur.com/piUPQNH.png",
         stock: 11,
         category: "almohadon"
     },
@@ -76,7 +76,7 @@ const products = [
         description: "Combo de almohadones",
         name: "Combo Summer",
         price: 5500,
-        img: "/images/productos/almohadones/09.png",
+        img: "https://i.imgur.com/re0NGlw.png",
         stock: 13,
         category: "almohadon"
     },
@@ -85,7 +85,7 @@ const products = [
         description: "Combo de almohadones",
         name: "Combo Haven",
         price: 6500,
-        img: "/images/productos/almohadones/010.png",
+        img: "https://i.imgur.com/5NmZ29g.png",
         stock: 20,
         category: "almohadon"
     },
@@ -94,7 +94,7 @@ const products = [
         description: "Combo de almohadones",
         name: "Combo Snow",
         price: 5500,
-        img: "/images/productos/almohadones/011.png",
+        img: "https://i.imgur.com/Ho6NrYu.png",
         stock: 3,
         category: "almohadon"
     },
@@ -103,7 +103,7 @@ const products = [
         description: "Combo de almohadones",
         name: "Combo BouBash",
         price: 6500,
-        img: "/images/productos/almohadones/012.png",
+        img: "https://i.imgur.com/rIPtLtA.png",
         stock: 1,
         category: "almohadon"
     },
@@ -112,7 +112,7 @@ const products = [
         description: "Combo de barbijo",
         name: "Combo Fine",
         price: 1400,
-        img: "/images/productos/barbijos/1.png",
+        img: "https://i.imgur.com/k3ta0CN.png",
         stock: 0,
         category: "barbijo"
     },
@@ -121,7 +121,7 @@ const products = [
         description: "Combo de barbijo",
         name: "Combo Tricton",
         price: 1400,
-        img: "/images/productos/barbijos/2.png",
+        img: "https://i.imgur.com/paHoFLF.png",
         stock: 8,
         category: "barbijo"
     },
@@ -130,7 +130,7 @@ const products = [
         description: "Combo de barbijo",
         name: "Combo Brossoc",
         price: 1400,
-        img: "/images/productos/barbijos/3.png",
+        img: "https://i.imgur.com/2zuKYL0.png",
         stock: 4,
         category: "barbijo"
     },
@@ -139,7 +139,7 @@ const products = [
         description: "Combo de barbijo",
         name: "Combo Zed",
         price: 900,
-        img: "/images/productos/barbijos/4.png",
+        img: "https://i.imgur.com/ZIvQu5e.png",
         stock: 7,
         category: "barbijo"
     },
@@ -148,7 +148,7 @@ const products = [
         description: "Combo de barbijo",
         name: "Combo Cozway",
         price: 1400,
-        img: "/images/productos/barbijos/5.png",
+        img: "https://i.imgur.com/RUWOtvO.png",
         stock: 9,
         category: "barbijo"
     },
@@ -157,7 +157,7 @@ const products = [
         description: "Combo de barbijo",
         name: "Combo Borla ",
         price: 900,
-        img: "/images/productos/barbijos/6.png",
+        img: "https://i.imgur.com/7TPt2XK.png",
         stock: 4,
         category: "barbijo"
     },
@@ -166,7 +166,7 @@ const products = [
         description: "Combo de barbijo",
         name: "Combo Oxxon",
         price: 900,
-        img: "/images/productos/barbijos/7.png",
+        img: "https://i.imgur.com/5lTFbs0.png",
         stock: 6,
         category: "barbijo"
     },
@@ -175,7 +175,7 @@ const products = [
         description: "Combo de barbijo",
         name: "Combo Alfiezza",
         price: 1400,
-        img: "/images/productos/barbijos/8.png",
+        img: "https://i.imgur.com/s5htt4W.png",
         stock: 7,
         category: "barbijo"
     },
@@ -184,7 +184,7 @@ const products = [
         description: "Combo de barbijo",
         name: "Combo Olokuti",
         price: 900,
-        img: "/images/productos/barbijos/9.png",
+        img: "https://i.imgur.com/L7JURp9.png",
         stock: 6,
         category: "barbijo"
     },
@@ -193,7 +193,7 @@ const products = [
         description: "Combo de barbijo",
         name: "Combo Rescá",
         price: 1400,
-        img: "/images/productos/barbijos/10.png",
+        img: "https://i.imgur.com/egV8PZN.png",
         stock: 3,
         category: "barbijo"
     },
@@ -202,7 +202,7 @@ const products = [
         description: "Combo de barbijo",
         name: "Combo Etam",
         price: 900,
-        img: "/images/productos/barbijos/11.png",
+        img: "https://i.imgur.com/CodhsB8.png",
         stock: 2,
         category: "barbijo"
     },
@@ -211,7 +211,7 @@ const products = [
         description: "Combo de barbijo",
         name: "Combo Geox",
         price: 1400,
-        img: "/images/productos/barbijos/12.png",
+        img: "https://i.imgur.com/Gaub8s6.png",
         stock: 4,
         category: "barbijo"
     }

@@ -1,14 +1,28 @@
 import "./ItemDetail.css"
 import Counter from "../Counter/Counter"
 import "../AsyncMock/AsyncMock"
-
+import Swal from "sweetalert2"
+import { useContext } from "react"
+import { CartContext } from "../../context/CartContext"
 
 const ItemDetail = ({ id, img, name, description, price, stock }) => {
-    const handleOnAdd = (counter) => {
+    const {addItem} = useContext(CartContext)
+    
+    const handleOnAdd = (quantity) => {
         const productToAdd = {
-            id, name, price, counter
+            id, name, price, quantity
         }
-        console.log(productToAdd)
+        addItem( productToAdd)
+        addAlert();
+
+    }
+
+    const addAlert = () => {
+        Swal.fire(
+            `${name}`,
+            `Agregado al carrito`,
+            `success`
+        );
     }
 
     return (
