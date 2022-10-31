@@ -1,8 +1,30 @@
 import "./NavBar.css"
 import CartWidget from "../CartWidget/CartWidget"
 import { Link } from "react-router-dom"
+import { useEffect, useState } from "react"
+import { getDocs, collection } from "firebase/firestore"
+import { db } from "../../service/firebase"
 
 const NavBar = () => {
+    const [categories, setCategories] = useState([])
+
+    useEffect(() => {
+
+        const collectionRef = collection(db, "categories")
+
+        getDocs(collectionRef).then(response => {
+            const categoriesAdapted = response.docs.map(doc => {
+                const data = doc.data()
+                const id = doc.data.id
+
+                return { id, ...data }
+            })
+            setCategories(categoriesAdapted)
+        })
+
+    }, [])
+
+
     return (
         <nav className="navbar_color navbar navbar-expand-lg ">
             <div className="container-fluid ">
@@ -15,20 +37,19 @@ const NavBar = () => {
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul className="navbar-nav">
-                        <li className="nav-item space_item">
-                            <Link className="nav-decoration" to={"/category/barbijo"}>
-                                <button className="nav-link" href="">Barbijos</button>
-                            </Link>
-                        </li>
-                        <li className="nav-item space_item">
-                            <Link className="nav-decoration" to={"/category/almohadon"}>
-                                <button className="nav-link" href="">Almohadones</button>
-                            </Link>
-                        </li>
+                        {
+                            categories.map(cat => (
+                                <li className="nav-item space_item">
+                                    <Link key={cat.id} to={`/category/${cat.slug}`} className="nav-decoration">
+                                        <button className="nav-link" href="">{cat.label}</button>
+                                    </Link>
+                                </li>
+                            ))
+                        }
                         <li className="nav-item space_item">
                             <button id="btnCarrito" className="nav-link btn-carrito" data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop">
-                                <CartWidget/>
+                                <CartWidget />
                             </button>
                         </li>
                     </ul>

@@ -1,15 +1,14 @@
-.base_web {
+.fondo{
 
     background-size: auto;
     font-size: 19px;
-    height: 100vh;
+min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: max-content auto max-content;
-}
-
-.fondo {
+    background-size: auto;
     background-image: url(../public/images/fondo/fondo.png);
+    
 }
 
 .error {

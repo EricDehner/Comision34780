@@ -34,23 +34,20 @@
 }
 
 .detail_content-name {
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
     font-family: "Dancing Script", cursive;
-    font-size: 4.5rem;
+    font-size: 3rem;
 }
 
 .detail_content-description {
-    font-size: 1.8rem;
-    color: rgba(0, 0, 0, 0.773);
+    font-size: 1.5rem;
+    font-family: "Bebas Neue", cursive;
+    color: rgba(0, 0, 0, 0.588);
 }
 
 .detail_content-price {
     margin: 6rem;
     font-family: "Bebas Neue", cursive;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: rgba(0, 0, 0, 0.637);
-}
-
-.detail_content-counter {
-    margin-bottom: 3rem;
 }
