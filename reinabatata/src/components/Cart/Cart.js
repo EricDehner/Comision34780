@@ -9,42 +9,39 @@ import { DotWave } from '@uiball/loaders'
 import Checkout from "../Checkout/Checkout"
 
 const Cart = () => {
+    const { cart, total, totalQuantity, deleteAskCart } =
+        useContext(CartContext);
 
-    const { cart, total, totalQuantity, deleteAskCart } = useContext(CartContext)
+    const [loading, setLoading] = useState(true);
 
-    const [loading, setLoading] = useState(false)
-
-
-
-    useEffect = (() => {
+    useEffect(() => {
         setTimeout(() => {
-            setLoading(true)
-        }, 1500);
-    }, [])
+            setLoading(false);
+        }, 500);
+    }, []);
 
+    if (loading) {
+        return (
+            <div className='uiball_loader'>
+                <DotWave size={110} speed={1} color='rgba(0, 0, 0, 0.733)' />
+            </div>
+        );
+    }
 
-
-        if (loading) {
-            return (
-                <div className="uiball_loader">
-                    <DotWave size={110} speed={1} color="rgba(0, 0, 0, 0.733)" />
-                </div>
-            )
-        }
-    
-        if (totalQuantity === 0) {
-            return (
-                <div className="cart_center">
-                    <div className="cart_container--alt">
-                        <div className="cart">
-                            <h2 className="cart-tittle--alt">Actualmente no posee productos en el carrito</h2>
-                            <ProductsBtn />
-                        </div>
+    if (totalQuantity === 0) {
+        return (
+            <div className='cart_center'>
+                <div className='cart_container--alt'>
+                    <div className='cart'>
+                        <h2 className='cart-tittle--alt'>
+                            Actualmente no posee productos en el carrito
+                        </h2>
+                        <ProductsBtn />
                     </div>
                 </div>
-            )
-        }
-
+            </div>
+        );
+    }
     return (
         
 <div className="cart_container">

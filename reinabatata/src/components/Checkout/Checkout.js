@@ -10,34 +10,31 @@ import { DotWave } from '@uiball/loaders'
 const Checkout = () => {
 
     const { totalQuantity } = useContext(CartContext)
- /*    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true);
 
-    useEffect = (() => {
-        setLoading(true)
-        return () => {
-            setLoading(false)
-        }
-    }, [])
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 500);
+    }, []);
 
     if (loading) {
         return (
-            <div className="uiball_loader">
-                <DotWave size={110} speed={1} color="rgba(0, 0, 0, 0.733)" />
+            <div className='uiball_loader'>
+                <DotWave size={110} speed={1} color='rgba(0, 0, 0, 0.733)' />
             </div>
-        )
+        );
     }
- */
-    /*     if (totalQuantity === 0) {
+        if (totalQuantity === 0) {
             return (
                 <div>
                     <Error emptyCartt={"Su carrito ha desaparecido, ¡vea nuestros productos!"} />
                 </div>
             )
-        } */
+        }
 
 
     return (
-
         <div>
             <div className="checkout_container">
                 <div>
@@ -49,7 +46,6 @@ const Checkout = () => {
                 </div>
             </div>
         </div>
-
     )
 }
 
