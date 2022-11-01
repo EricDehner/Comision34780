@@ -15,7 +15,7 @@ const NavBar = () => {
         getDocs(collectionRef).then(response => {
             const categoriesAdapted = response.docs.map(doc => {
                 const data = doc.data()
-                const id = doc.data.id
+                const id = doc.id
 
                 return { id, ...data }
             })
@@ -39,8 +39,8 @@ const NavBar = () => {
                     <ul className="navbar-nav">
                         {
                             categories.map(cat => (
-                                <li className="nav-item space_item">
-                                    <Link key={cat.id} to={`/category/${cat.slug}`} className="nav-decoration">
+                                <li className="nav-item space_item" key={cat.id}>
+                                    <Link to={`/category/${cat.slug}`} className="nav-decoration">
                                         <button className="nav-link" href="">{cat.label}</button>
                                     </Link>
                                 </li>

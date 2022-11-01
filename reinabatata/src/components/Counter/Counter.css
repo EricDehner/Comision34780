@@ -52,6 +52,7 @@
     display: flex;
     justify-content: space-around;
     width: 40rem;
+    margin-bottom: 3rem;
 }
 
 .counter_stock {

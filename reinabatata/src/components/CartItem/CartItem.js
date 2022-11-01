@@ -4,7 +4,7 @@ import { CartContext } from '../../context/CartContext'
 
 
 const CartItem = ({ id, name, img, quantity, description, price }) => {
-    const { removeItem } = useContext(CartContext)
+    const { /* removeItem ,*/ deleteAsk } = useContext(CartContext)
 
     return (
         <div className="cart">
@@ -22,8 +22,8 @@ const CartItem = ({ id, name, img, quantity, description, price }) => {
                             <p className="card-text">Cantidad:</p>
                             <p className="number-quantity">{quantity}</p>
                         </div>
-                        <div className="">
-                            <p className="cart-trash" onClick={() => removeItem(id)}><i className="fa-solid fa-trash"></i></p>
+                        <div>
+                            <p className="cart-trash" onClick={() => deleteAsk(id)}><i className="fa-solid fa-trash"></i></p>
                         </div>
                     </div>
                 </div>

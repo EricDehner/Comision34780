@@ -20,8 +20,15 @@
 .item_buttom {
     height: 2rem;
     border: 1px solid grey;
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.64);
+    font-family: "Bebas Neue", cursive;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.355);
+}
+.item_buttom:hover {
+    color: rgba(0, 0, 0, 0.753);
+box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.291);
 }
 
 .item_content {
@@ -48,5 +55,8 @@
 
 .item_price {
     color: rgba(0, 0, 0, 0.852);
-    font-size: 1.35rem;
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.726);
+    font-family: "Bebas Neue", cursive;
+    border-radius: 5px;
 }

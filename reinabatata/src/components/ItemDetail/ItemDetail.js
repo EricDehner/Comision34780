@@ -1,11 +1,11 @@
 import "./ItemDetail.css"
 import Counter from "../Counter/Counter"
-
+import OutOfStock from "../OutOfStock/OutOfStock"
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 
 const ItemDetail = ({ id, img, name, description, price, stock }) => {
-    
+
     const { addItem, getProductQuantity } = useContext(CartContext)
 
     const handleOnAdd = (quantity) => {
@@ -15,7 +15,7 @@ const ItemDetail = ({ id, img, name, description, price, stock }) => {
         addItem(productToAdd, quantity)
     }
 
-const quantityAdded = getProductQuantity(id)
+    const quantityAdded = getProductQuantity(id)
 
     return (
         <div key={id} className="detail_container">
@@ -25,7 +25,11 @@ const quantityAdded = getProductQuantity(id)
                     <h1 className="detail_content-name">{name}</h1>
                     <h3 className="detail_content-description">{description} </h3>
                     <p className="detail_content-price">Precio: ${price} </p>
-                    <div className="detail_content-counter"><Counter onAdd={handleOnAdd} maxStock={stock} initial={quantityAdded} /></div>
+                    <div >
+                        {stock !== 0
+                            ? <Counter onAdd={handleOnAdd} maxStock={stock} initial={quantityAdded} />
+                            : <OutOfStock/>}
+                    </div>
                 </div>
             </div>
         </div>

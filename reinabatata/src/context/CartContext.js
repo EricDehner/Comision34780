@@ -74,6 +74,49 @@ export const CartProvider = ({ children }) => {
         );
     }
 
+const deleteAskCart = () => {
+    Swal.fire({
+        title: '¿Deseas eliminar todos los productos del carrito?',
+        text: "Todos los productos se eliminarán de tu carrito",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Eliminar'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            clearCart()
+            Swal.fire(
+                '¡Productos eliminados!',
+                'Su productos fueron eliminados del carrito con exito.',
+                'success'
+            )
+        }
+    })
+}
+
+    const deleteAsk = (id) => {
+        Swal.fire({
+            title: '¿Deseas eliminar este producto?',
+            text: "Este producto se eliminará de tu carrito",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Eliminar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                removeItem(id)
+                Swal.fire(
+                    '¡Producto eliminado!',
+                    'Su producto fue eliminado del carrito con exito.',
+                    'success'
+                )
+            }
+        })
+    }
+
+
     const isInCart = (id) => {
         return cart.some(prod => prod.id === id)
     }
@@ -93,11 +136,9 @@ export const CartProvider = ({ children }) => {
 
     const getTotal = () => {
         let accu = 0
-
         cart.forEach(prod => {
             accu += prod.quantity * prod.price
         })
-
         return accu
     }
 
@@ -107,12 +148,11 @@ export const CartProvider = ({ children }) => {
 
     const getProductQuantity = (id) => {
         const product = cart.find(prod => prod.id === id)
-
         return product?.quantity
     }
 
     return (
-        <CartContext.Provider value={{ cart, addItem, removeItem, totalQuantity, total, clearCart, getProductQuantity }}>
+        <CartContext.Provider value={{ cart, addItem, removeItem, totalQuantity, total, clearCart, getProductQuantity, deleteAsk, deleteAskCart }}>
             {children}
         </CartContext.Provider>
     )

@@ -3,10 +3,25 @@ import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import { Link } from "react-router-dom"
 import CartItem from "../CartItem/CartItem"
+import ProductsBtn from "../ProductsBtn/ProductsBtn"
+import { useEffect, useState } from "react"
+import { DotWave } from '@uiball/loaders'
 
 const Cart = () => {
 
-    const { cart, total, totalQuantity, clearCart } = useContext(CartContext)
+    const { cart, total, totalQuantity, deleteAskCart } = useContext(CartContext)
+
+    const [loading, setLoading] = useState(false)
+
+    
+
+    if (loading) {
+        return (
+            <div className="uiball_loader">
+                <DotWave size={110} speed={1} color="rgba(0, 0, 0, 0.733)" />
+            </div>
+        )
+    }
 
     if (totalQuantity === 0) {
         return (
@@ -14,11 +29,7 @@ const Cart = () => {
                 <div className="cart_container--alt">
                     <div className="cart">
                         <h2 className="cart-tittle--alt">Actualmente no posee productos en el carrito</h2>
-                        <div className="btn_container">
-                            <Link to="/">
-                                <button className="cart_btn--alt">Nuestros productos</button>
-                            </Link>
-                        </div>
+                        <ProductsBtn />
                     </div>
                 </div>
             </div>
@@ -30,10 +41,10 @@ const Cart = () => {
             {cart.map(prod => <CartItem key={prod.id} {...prod} />)}
             <div className="cart_footer">
                 <div className="cart_price">
-                    <p>Total: </p>
-                    <p>${total}</p>
+                    <p className="tlt-text">Precio total: </p>
+                    <p className="tlt-quantity">${total}</p>
                 </div>
-                <button className="cart_footer-cleanBtn" onClick={() => clearCart()}>Vaciar carrito</button>
+                <button className="cart_footer-cleanBtn" onClick={() => deleteAskCart()}>Vaciar carrito</button>
                 <Link to="/checkout">
                     <button className="cart_footer-btn">Comprar</button>
                 </Link>
