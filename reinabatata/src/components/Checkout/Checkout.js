@@ -2,20 +2,39 @@ import "./Checkout.css"
 import Error from "../Error/Error"
 import CheckoutCart from "../CheckoutCart/CheckoutCart"
 import CheckoutForm from "../CheckoutForm/CheckoutForm"
-import { useContext } from "react"
+import { useEffect, useState, useContext } from "react"
 import { CartContext } from "../../context/CartContext"
+import { DotWave } from '@uiball/loaders'
+
 
 const Checkout = () => {
 
     const { totalQuantity } = useContext(CartContext)
+ /*    const [loading, setLoading] = useState(false)
 
-/*     if (totalQuantity === 0) {
+    useEffect = (() => {
+        setLoading(true)
+        return () => {
+            setLoading(false)
+        }
+    }, [])
+
+    if (loading) {
         return (
-            <div>
-                <Error emptyCartt={"Su carrito ha desaparecido, ¡vea nuestros productos!"} />
+            <div className="uiball_loader">
+                <DotWave size={110} speed={1} color="rgba(0, 0, 0, 0.733)" />
             </div>
         )
-    } */
+    }
+ */
+    /*     if (totalQuantity === 0) {
+            return (
+                <div>
+                    <Error emptyCartt={"Su carrito ha desaparecido, ¡vea nuestros productos!"} />
+                </div>
+            )
+        } */
+
 
     return (
 
