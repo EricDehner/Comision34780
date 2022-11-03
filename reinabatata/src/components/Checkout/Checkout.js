@@ -6,8 +6,11 @@ import { useEffect, useState, useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import { DotWave } from '@uiball/loaders'
 
-
 const Checkout = () => {
+
+    useEffect(() => {
+        document.title = "Reina batata | Checkout"
+    })
 
     const { totalQuantity } = useContext(CartContext)
     const [loading, setLoading] = useState(true);
@@ -25,14 +28,13 @@ const Checkout = () => {
             </div>
         );
     }
-        if (totalQuantity === 0) {
-            return (
-                <div>
-                    <Error emptyCartt={"Su carrito ha desaparecido, ¡vea nuestros productos!"} />
-                </div>
-            )
-        }
-
+    if (totalQuantity === 0) {
+        return (
+            <div>
+                <Error emptyCartt={"Su carrito ha desaparecido, ¡vea nuestros productos!"} />
+            </div>
+        )
+    }
 
     return (
         <div>

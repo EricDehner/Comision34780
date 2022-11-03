@@ -12,8 +12,8 @@ import Error from "./components/Error/Error";
 function App() {
   return (
     <div className='fondo'>
-      <CartProvider>
-        <BrowserRouter>
+      <BrowserRouter>
+        <CartProvider>
           <NavBar />
           <Routes>
             <Route path='/' element={<ItemListContainer tittleItemList={"¡Nuestros productos!"} />} />
@@ -21,11 +21,11 @@ function App() {
             <Route path='/detail/:productId' element={<ItemDetailContainer />} />
             <Route path='/cart' element={<Cart />} />
             <Route path='/checkout' element={<Checkout />} />
-            <Route path='*' element={<Error/>} />
+            <Route path='*' element={<Error />} />
           </Routes>
           <Footer />
-        </BrowserRouter>
-      </CartProvider>
+        </CartProvider>
+      </BrowserRouter>
     </div>
   );
 }

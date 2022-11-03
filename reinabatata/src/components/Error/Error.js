@@ -1,7 +1,12 @@
 import "./Error.css"
 import ProductsBtn from "../ProductsBtn/ProductsBtn"
+import { useEffect } from "react"
 
-const Error = ({emptyCartt}) => {
+const Error = ({ emptyCartt }) => {
+
+    useEffect(() => {
+        document.title = "Reina batata | Error"
+    })
 
     return (
         <div className="content">
@@ -13,7 +18,7 @@ const Error = ({emptyCartt}) => {
                 <p className="content_error">Pagina no encontrada</p>
                 <p className="content_text">{emptyCartt}</p>
                 <div className="content_btn">
-                <ProductsBtn/>
+                    <ProductsBtn />
                 </div>
             </div>
         </div>

@@ -1,12 +1,8 @@
 .navbar_color {
     background-color: rgba(197, 200, 172, 0.97);
-    position: fixed;
     width: 100%;
-    top: 0;
-    z-index: 10;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.178);
 }
-
 
 .navbar_color-dropdown {
     background-color: rgba(197, 200, 172, 0.808);
@@ -23,6 +19,8 @@
 .navbar_decoration {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.645);
+    transition: all .12s ease-in-out;
+
 }
 
 .navbar_decoration:hover {

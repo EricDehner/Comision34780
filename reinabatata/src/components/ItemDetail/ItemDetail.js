@@ -1,11 +1,13 @@
 import "./ItemDetail.css"
 import Counter from "../Counter/Counter"
 import OutOfStock from "../OutOfStock/OutOfStock"
-import { useContext } from "react"
+import { useState, useContext } from "react"
 import { CartContext } from "../../context/CartContext"
+import AddedToCart from "../AddedToCart/AddedToCart"
 
 const ItemDetail = ({ id, img, name, description, price, stock }) => {
 
+    const [added, setAdded] = useState(false);
     const { addItem, getProductQuantity } = useContext(CartContext)
 
     const handleOnAdd = (quantity) => {
@@ -13,6 +15,7 @@ const ItemDetail = ({ id, img, name, description, price, stock }) => {
             id, name, img, price, description, quantity
         }
         addItem(productToAdd, quantity)
+        setAdded(true);
     }
 
     const quantityAdded = getProductQuantity(id)
@@ -27,8 +30,8 @@ const ItemDetail = ({ id, img, name, description, price, stock }) => {
                     <p className="detail_content-price">Precio: ${price} </p>
                     <div >
                         {stock !== 0
-                            ? <Counter onAdd={handleOnAdd} maxStock={stock} initial={quantityAdded} />
-                            : <OutOfStock/>}
+                            ? added ? <AddedToCart /> : < Counter onAdd={handleOnAdd} maxStock={stock} initial={quantityAdded} />
+                            : <OutOfStock />}
                     </div>
                 </div>
             </div>

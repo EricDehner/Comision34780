@@ -13,6 +13,10 @@ const ItemListContainer = ({ tittleItemList }) => {
     const { categoryId } = useParams()
 
     useEffect(() => {
+        document.title = "Reina batata | Productos"
+    })
+
+    useEffect(() => {
 
         setLoading(true)
 

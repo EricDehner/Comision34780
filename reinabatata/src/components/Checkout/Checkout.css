@@ -1,21 +1,3 @@
-.buy_btn--alt {
-    display: flex;
-    align-items: center;
-    font-family: "Bebas Neue", cursive;
-    font-size: 1.3rem;
-    color: rgba(255, 255, 255, 0.618);
-    border: 1px solid rgba(0, 0, 0, 0.166);
-    padding: 0.2rem 1rem;
-    border-radius: 5px;
-    background-color: rgba(37, 37, 37, 0.254);
-}
-
-.buy_btn--alt:hover {
-    background-color: rgba(37, 37, 37, 0.33);
-    color: rgba(255, 255, 255, 0.825);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.504);
-}
-
 .fa-regular {
     margin-left: .8rem;
 }
@@ -26,7 +8,7 @@
 
 .checkout_container {
     width: 90%;
-    margin: 4.5rem auto 3rem auto ;
+    margin: 4.5rem auto 3rem auto;
     background-color: rgba(205, 205, 190, 0.405);
     padding: 2rem;
     border-radius: 10px;
@@ -38,7 +20,7 @@
     width: 500px;
 }
 
-.stick{
+.stick {
     margin: 0 2rem;
     width: 1px;
     height: auto;
@@ -47,7 +29,6 @@
 
 .form_container-cart {
     width: 100%;
-    
 }
 
 .formImputs {

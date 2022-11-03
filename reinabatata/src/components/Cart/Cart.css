@@ -11,7 +11,7 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.258);
     border: 1px solid rgba(0, 0, 0, 0.057);
     border-radius: 5px;
-    margin: 2rem auto;
+    margin: auto auto;
 }
 
 .cart_tittle {
@@ -50,6 +50,7 @@
     border-radius: 5px;
     padding: 0.2rem 1rem;
     background-color: rgba(255, 0, 0, 0.254);
+    transition: all .12s ease-in-out;
 }
 
 .cart_footer-cleanBtn:hover {
@@ -66,6 +67,7 @@
     padding: 0.2rem 1rem;
     border-radius: 5px;
     background-color: rgba(37, 37, 37, 0.254);
+    transition: all .12s ease-in-out;
 }
 
 .cart_footer-btn:hover {
@@ -81,8 +83,6 @@
     margin: 3rem 0 4rem 0;
     text-align: center;
 }
-
-
 
 .cart_container--alt {
     height: max-content;

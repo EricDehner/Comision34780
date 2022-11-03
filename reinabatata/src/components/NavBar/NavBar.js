@@ -21,9 +21,7 @@ const NavBar = () => {
             })
             setCategories(categoriesAdapted)
         })
-
     }, [])
-
 
     return (
         <nav className="navbar_color navbar navbar-expand-lg ">
@@ -58,5 +56,4 @@ const NavBar = () => {
         </nav>
     )
 }
-
 export default NavBar

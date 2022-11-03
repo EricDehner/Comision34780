@@ -8,10 +8,13 @@ import { getDoc, doc } from "firebase/firestore"
 import { useEffect, useState } from "react"
 
 const ItemDetailContainer = () => {
-
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
     const { productId } = useParams()
+
+    useEffect(() => {
+        document.title = `Reina Batata | ${products.name ? products.name : "Detalle"}`
+    })
 
     useEffect(() => {
 
@@ -41,5 +44,4 @@ const ItemDetailContainer = () => {
         </div>
     )
 }
-
 export default ItemDetailContainer

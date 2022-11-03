@@ -9,10 +9,9 @@ const CartWidget = () => {
 
     return (
         <div className="cartWidget">
-
-        <Link to="/cart" className="cartWidget">
-            <i className="fa-solid fa-cart-shopping"></i> {totalQuantity}
-        </Link>
+            <Link to="/cart" className="cartWidget">
+                <i className="fa-solid fa-cart-shopping"></i> {totalQuantity}
+            </Link>
         </div>
     )
 }
